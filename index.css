@@ -1,0 +1,153 @@
+html { overflow-y: scroll; }
+html, body {
+   margin: 5px;
+   padding: 0;
+ }
+
+ p {
+   padding: 0;
+   margin: 0;
+ }
+
+div {
+  display: block;
+}
+
+#sectionHolder {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.section {
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+
+
+p#messageTop, p#message {
+  margin: 10px 0;
+  text-align: center;
+}
+
+p#message {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+
+
+
+p#messageTop {
+  font-weight: 200;
+   -webkit-transition: font-weight 2s, -webkit-transform 2s; /* Safari */
+   transition: font-weight 2s, transform 2s;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+p#messageTop:hover {
+  font-weight: 900;
+
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(360deg);
+}
+
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    10%  {background-color: yellow;}
+    20%  {background-color: blue;}
+    30% {background-color: green;}
+    40%   {background-color: grey;}
+    50%  {background-color: red;}
+    60%  {background-color: yellow;}
+    70% {background-color: blue;}
+    80%   {background-color: green;}
+    90%  {background-color: grey;}
+    100%  {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color: red;}
+  10%  {background-color: yellow;}
+  20%  {background-color: blue;}
+  30% {background-color: green;}
+  40%   {background-color: grey;}
+  50%  {background-color: red;}
+  60%  {background-color: yellow;}
+  70% {background-color: blue;}
+  80%   {background-color: green;}
+  90%  {background-color: grey;}
+  100%  {background-color: red;}
+}
+
+
+
+
+
+
+div#buttonHolder {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div#buttonHolder button {
+  width: 32%;
+  font-weight: bold;
+  border: 0;
+  color: white;
+  background: SlateBlue;
+}
+div#buttonHolder button:hover { opacity: 0.8; }
+div#buttonHolder button:disabled { opacity: 0.2; }
+div#buttonHolder button.callCard { background: MediumSeaGreen; }
+div#buttonHolder button.holdCards { background: tomato; }
+
+.playingCardMini {
+  max-width: 86px;
+  max-height: 115px;
+}
+
+.handHolder {
+  margin: 10 0px;
+  text-align: center;
+}
+.handHolder p { text-align: center; }
+
+.handHolder .hand {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.handHolder .hand .cardInHand {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.cardName {
+  max-width: 85px;
+  width: 85px;
+  float: left;
+}
+.hidden {display: none; }
+#statHolder { min-height: 21px; }
+#statHolder pre { margin: 0; }
+#statHolder .pullRight { float: right; }
